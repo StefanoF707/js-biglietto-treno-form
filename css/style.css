@@ -3,3 +3,74 @@
      padding: 0;
      box-sizing: border-box;
 }
+
+body {
+     background: #27b827;
+     font-family: arial;
+}
+
+h2 {
+     font-size: 36px;
+     text-transform: uppercase;
+     margin: 20px 0;
+}
+
+#wrapper {
+     width: 80%;
+     margin: 10px auto;
+     text-align: center;
+}
+
+#wrapper_top > .ticket_generator {
+     width: 100%;
+     padding: 20px;
+     background: #fff;
+     border-radius: 10px;
+}
+
+.ticket_generator > .ticket_generator_top,
+.ticket_generator > .ticket_generator_bottom {
+     padding: 15px 0;
+}
+
+.btn {
+     display: inline-block;
+     padding: 5px 10px;
+     color: #f00;
+     background: #a090a3;
+     font-weight: bold;
+     margin: 0 15px;
+}
+
+#wrapper_bottom {
+     margin-top: 60px;
+}
+
+#wrapper_bottom > .ticket_printer {
+     width: 100%;
+     background: #b8b8b8;
+     padding: 20px;
+     text-align: left;
+          height: 200px;
+}
+
+.ticket_printer  .info {
+     display: flex;
+          height: 100%;
+}
+
+.info > .info_left {
+     width: 25%;
+          height: 80%;
+     background: #868686;
+}
+.info > .info_right {
+     width: 75%;
+          height: 80%;
+     background: #fff;
+}
+
+.info_right th,
+.info_right td {
+     padding: 0 20px;
+}
