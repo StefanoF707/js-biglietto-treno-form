@@ -15,6 +15,13 @@ h2 {
      margin: 20px 0;
 }
 
+.hidden {
+     opacity: 0;
+}
+.show {
+     opacity: 1;
+}
+
 #wrapper {
      width: 80%;
      margin: 10px auto;
@@ -40,13 +47,14 @@ h2 {
      background: #a090a3;
      font-weight: bold;
      margin: 0 15px;
+     cursor: pointer;
 }
 
 #wrapper_bottom {
      margin-top: 60px;
 }
 
-#wrapper_bottom > .ticket_printer {
+#wrapper_bottom > #ticket_printed {
      width: 100%;
      background: #b8b8b8;
      padding: 20px;
@@ -54,7 +62,7 @@ h2 {
           height: 200px;
 }
 
-.ticket_printer  .info {
+#ticket_printed .info {
      display: flex;
           height: 100%;
 }
