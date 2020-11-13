@@ -5,8 +5,13 @@
 }
 
 body {
-     background: #27b827;
      font-family: arial;
+     background: #E42312;
+}
+
+/* UTILITIES */
+:focus {
+     outline: 0;
 }
 
 h2 {
@@ -21,6 +26,8 @@ h2 {
 .show {
      opacity: 1;
 }
+/* /UTILITIES */
+
 
 #wrapper {
      width: 80%;
@@ -28,26 +35,51 @@ h2 {
      text-align: center;
 }
 
-#wrapper_top > .ticket_generator {
+#wrapper_top > #ticket_generator {
      width: 100%;
-     padding: 20px;
-     background: #fff;
+     background: #F8F8F8;
+     color:  #E42312;
+     font-weight: bold;
+     box-shadow: 1px 3px 5px #000000;
      border-radius: 10px;
 }
 
-.ticket_generator > .ticket_generator_top,
-.ticket_generator > .ticket_generator_bottom {
-     padding: 15px 0;
+#ticket_generator > .ticket_generator_top {
+     display: flex;
+     justify-content: space-around;
+     padding: 30px 0;
 }
+.ticket_generator_top .form_container > input,
+.ticket_generator_top .form_container > select#age {
+     display: block;
+     font-weight: bold;
+     margin-top: 10px;
+     padding: 10px;
+     text-align: center;
+     border: 0;
+     box-shadow: 0px 0px 2px 1px #000000;
+     border-radius: 5px;
+}
+
+#ticket_generator > .ticket_generator_bottom {
+     padding: 30px 0;
+}
+
 
 .btn {
      display: inline-block;
-     padding: 5px 10px;
-     color: #f00;
-     background: #a090a3;
+     padding: 12px 20px;
+     margin: 0 30px;
+     color: #fff;
+     background: #E42312;
+     border: 2px solid #544d55;
      font-weight: bold;
-     margin: 0 15px;
      cursor: pointer;
+     transition: background 0.3s;
+}
+.btn:hover {
+     background: #e25d51;
+     border: 2px solid #353336;
 }
 
 #wrapper_bottom {
