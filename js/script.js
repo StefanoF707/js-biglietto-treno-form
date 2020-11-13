@@ -11,7 +11,6 @@ generatorButton.addEventListener("click",
           // chiedere all'utente l'età
           var age = document.getElementById("age").value;
 
-
           // prezzo biglietto
           var ticketPrice = 0.21 * distance;
 
