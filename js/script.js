@@ -31,26 +31,30 @@ generatorButton.addEventListener("click",
           var discount40 = ((40 * ticketPrice) / 100);
 
 
+          document.getElementById("discount").style.color = "black";
           var ticketType = "Biglietto standard"
           if (age == "minor") {
                ticketPrice = ticketPrice - discount20;
                ticketType = "Sconto silver";
+               document.getElementById("discount").style.color = "silver";
           } else if (age == "old") {
                ticketPrice = ticketPrice - discount40;
                ticketType = "Sconto Gold";
+               document.getElementById("discount").style.color = "gold";
           }
 
-          document.getElementById("customer_name").innerHTML = name;
 
+          document.getElementById("customer_name").innerHTML = name;
           document.getElementById("discount").innerHTML = ticketType;
+
           document.getElementById("price").innerHTML = ticketPrice.toFixed(2) + "€";
 
           // creazioni variabili vagone e codice cp
           var wagon = Math.floor((Math.random() * 9) + 1);
-          document.getElementById("wagon").innerHTML = wagon;
+          document.getElementById("wagon").innerHTML = "n°: " + wagon;
 
           var cpCode = Math.floor((Math.random() * 10000) + 90000);
-          document.getElementById("cp_code").innerHTML = cpCode;
+          document.getElementById("cp_code").innerHTML = "n°: " + cpCode;
 
           // il biglietto appare solamente al click del pulsante genera
           var ticketPrinted = document.getElementById("ticket_printed");

@@ -21,10 +21,30 @@ h2 {
 }
 
 .hidden {
+     width: 0%;
      opacity: 0;
+     transition: width 2s 0.1s, opacity 0.8s;
 }
 .show {
+     width: 100%;
      opacity: 1;
+     transition: width 0.7s, opacity 2s;
+}
+
+.btn {
+     display: inline-block;
+     padding: 12px 20px;
+     margin: 0 30px;
+     color: #fff;
+     background: #E42312;
+     border: 2px solid #544d55;
+     font-weight: bold;
+     cursor: pointer;
+     transition: background 0.3s;
+}
+.btn:hover {
+     background: #e25d51;
+     border: 2px solid #353336;
 }
 /* /UTILITIES */
 
@@ -65,52 +85,60 @@ h2 {
      padding: 30px 0;
 }
 
-
-.btn {
-     display: inline-block;
-     padding: 12px 20px;
-     margin: 0 30px;
-     color: #fff;
-     background: #E42312;
-     border: 2px solid #544d55;
-     font-weight: bold;
-     cursor: pointer;
-     transition: background 0.3s;
-}
-.btn:hover {
-     background: #e25d51;
-     border: 2px solid #353336;
-}
-
 #wrapper_bottom {
      margin-top: 60px;
 }
 
 #wrapper_bottom > #ticket_printed {
-     width: 100%;
-     background: #b8b8b8;
+     background: #F8F8F8;
      padding: 20px;
      text-align: left;
-          height: 200px;
+     box-shadow: 1px 3px 5px #000000;
+     border-radius: 10px;
+}
+
+#ticket_printed > h3 {
+     text-transform: uppercase;
+     margin-bottom: 7px;
 }
 
 #ticket_printed .info {
      display: flex;
-          height: 100%;
 }
 
 .info > .info_left {
      width: 25%;
-          height: 80%;
-     background: #868686;
+     padding: 20px;
+     background: #FFF6C5;
+     border-right: 2px dotted #000;
+     border-radius: 7px;
 }
-.info > .info_right {
-     width: 75%;
-          height: 80%;
-     background: #fff;
+.info_left > h5 {
+     margin-bottom: 15px;
+     text-transform: uppercase;
+}
+.info_left > h4 {
+     color: #E42312;
+     text-transform: capitalize;
 }
 
-.info_right th,
-.info_right td {
-     padding: 0 20px;
+
+.info > .info_right {
+     display: flex;
+     justify-content: space-around;
+     width: 75%;
+     padding: 20px;
+     background: #FFF6C5;
+     border-radius: 7px;
+}
+
+.info_right > .info_right_item > h4 {
+     font-size: 18px;
+     margin-bottom: 70px;
+     text-transform: uppercase;
+}
+
+.info_right > .info_right_item > h6 {
+     font-size: 13px;
+     text-transform: uppercase;
 }
